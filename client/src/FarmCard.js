@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function FarmCard({farm}) {
 
@@ -11,10 +12,10 @@ function FarmCard({farm}) {
 
     return(
         <div id="farm-card">
-            <a href={`/farms/${id}`}>
+            <NavLink to={`/farms/${id}`}>
                 <h3>{name}</h3>
                 <p>{city}, {state}</p>
-            </a>
+            </NavLink>
         </div>
     )
 }
