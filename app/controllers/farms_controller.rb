@@ -10,15 +10,15 @@ class FarmsController < ApplicationController
     end
 
     def update
-        farm = Farm.find_by(params[:id])
-        farm = Farm.update!(farm_params)
-        render json: farm, status: accepted
+        farm = Farm.find_by(id: params[:id])
+        farm.update!(farm_params)
+        render json: farm, status: :accepted
     end
 
     def destroy
-        farm = Farm.find_by(params[:id])
+        farm = Farm.find_by(id: params[:id])
         farm.destroy
-        render json: farm, status: ok
+        render json: farm, status: :ok
     end
 
     private
