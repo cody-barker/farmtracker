@@ -30,7 +30,4 @@ class FarmsController < ApplicationController
             :state
         )
     end
-
-    
-
 end
