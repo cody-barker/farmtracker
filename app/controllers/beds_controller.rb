@@ -6,7 +6,7 @@ class BedsController < ApplicationController
     end
 
     def destroy
-        bed = Bed.find_by(params[:id])
+        bed = Bed.find_by(id: params[:id])
         bed.destroy
         render json: bed, status: :ok
     end
@@ -15,6 +15,7 @@ class BedsController < ApplicationController
 
     def bed_params
         params.permit(
+            :id,
             :sq_ft,
             :crop,
             :planting_date,

@@ -40,7 +40,7 @@ function AddABedForm({allFarms, setAllFarms}){
 
     function onAddABed(e) {
         e.preventDefault()
-        fetch('http://localhost:9292/beds', {
+        fetch('/beds', {
             method: "POST",
             headers: {
                 "Content-Type" : "application/json"
