@@ -5,6 +5,8 @@ class FarmsController < ApplicationController
     end
 
     def create
+        farm = Farm.create!(farm_params)
+        render json: farm
     end
 
     def update
@@ -12,5 +14,17 @@ class FarmsController < ApplicationController
 
     def destroy
     end
+
+    private
+
+    def farm_params
+        params.permit(
+            :name,
+            :city,
+            :state
+        )
+    end
+
+    
 
 end
