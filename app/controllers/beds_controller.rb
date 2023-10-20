@@ -1,9 +1,14 @@
 class BedsController < ApplicationController
 
     def create
+        bed = Bed.create!(bed_params)
+        render json: bed, status: :created
     end
 
     def destroy
+        bed = Bed.find_by(params[:id])
+        bed.destroy
+        render json: bed, status: :ok
     end
 
     private
