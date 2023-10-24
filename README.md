@@ -54,9 +54,6 @@ Installs the dependencies for the app.
 Runs the app in the development mode.\
 Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
 ## For Contributors
 If you'd like to contribute to this project, you may clone this repo and submit your changes for approval to codybarker.or@gmail.com
 
