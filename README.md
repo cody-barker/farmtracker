@@ -13,9 +13,6 @@ Users can:
 
 ## Available Scripts
 
-You can find the Ruby API for this React frontend at: https://github.com/cody-barker/phase-3-sinatra-react-project
-
-
 ## Backend
 
 From the project directory you can run:
@@ -52,10 +49,10 @@ From the frontend directory you can run:
 
 Installs the dependencies for the app.
 
-### `npm start`
+### `npm start --prefix client`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
