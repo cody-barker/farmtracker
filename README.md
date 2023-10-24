@@ -4,6 +4,14 @@ The Farm Tracker maintains a record of the production beds on a number of farms.
 
 ## Features
 
+<img src="public/farmtracker_preview.gif" alt="app.gif">
+<a href="https://youtu.be/rj4ag97Kfh4" alt="app video">Click here for a demo video of the app.</a>
+<br><br>
+<a href="https://farm-tracker.onrender.com"
+alt="deployed app link">See the app deployed on Render.</a>
+<br><br>
+
+
 Users can:
 
 - View a list of all farms in the tracker
