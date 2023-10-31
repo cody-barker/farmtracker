@@ -1,6 +1,6 @@
 ## Farm Tracker
 
-The Farm Tracker maintains a record of the production beds on a number of farms. Users can select a farm to view it's production beds, with details about each bed's square footage, crop, anticipated days to maturity, planting and harvesting dates. Users can add both farms and beds to the tracker, as well as remove them. Users may also update the name and location of a farm.
+Farm Tracker maintains a record of the production beds on a number of farms. Users can select a farm to view it's production beds, with details about each bed's square footage, crop, anticipated days to maturity, planting and harvesting dates. Users can add both farms and beds to the tracker, as well as remove them. Users may also update the name and location of a farm.
 
 ## Features
 
