@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_10_20_204532) do
+ActiveRecord::Schema.define(version: 2024_04_21_213940) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,40 +32,6 @@ ActiveRecord::Schema.define(version: 2023_10_20_204532) do
     t.string "state"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "reviews", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "trail_id"
-    t.date "date"
-    t.integer "trail_rating"
-    t.string "condition"
-    t.string "content"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "trails", force: :cascade do |t|
-    t.string "name"
-    t.string "difficulty"
-    t.float "length"
-    t.string "description"
-    t.string "dogs_allowed"
-    t.string "family_friendly"
-    t.string "trailhead_coordinates"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "photo"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "city"
-    t.string "state"
-    t.string "profile_image"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "password_digest"
   end
 
 end
