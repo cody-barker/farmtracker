@@ -51,11 +51,11 @@ function EditFarm({ allFarms, setAllFarms }) {
     })
       .then((r) => r.json())
       .then((patchedFarm) => {
-        const updatedFarms = allFarms.map((f) => {
-          if (f.id === id) {
+        const updatedFarms = allFarms.map((farm) => {
+          if (farm.id === id) {
             return patchedFarm;
           } else {
-            return f;
+            return farm;
           }
         });
         setAllFarms(updatedFarms);

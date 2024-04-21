@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import TableRow from "./TableRow";
 import AddABedForm from "./AddABedForm";
 
@@ -8,7 +8,7 @@ function FarmDetail({ allFarms, setAllFarms }) {
   id = parseInt(id);
   let navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
-  const farm = allFarms.find((f) => f.id === id);
+  const farm = allFarms.find((farm) => farm.id === id);
   let tableRowComps = [];
   let bedsTable;
 
@@ -55,7 +55,7 @@ function FarmDetail({ allFarms, setAllFarms }) {
     fetch(`/farms/${id}`, {
       method: "DELETE",
     })
-      .then(setAllFarms([...allFarms].filter((f) => f.id !== id)))
+      .then(setAllFarms([...allFarms].filter((farm) => farm.id !== id)))
       .then(navigate("/farms"));
   }
 
@@ -69,9 +69,9 @@ function FarmDetail({ allFarms, setAllFarms }) {
         </div>
 
         <div className="button-container">
-          <a id="edit-farm-button" href={`/farms/${id}/edit`}>
+          <Link id="edit-farm-button" to={`/farms/${id}/edit`}>
             <button>Edit {farm.name}</button>
-          </a>
+          </Link>
         </div>
 
         <div className="button-container">
