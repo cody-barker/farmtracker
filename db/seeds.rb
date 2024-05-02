@@ -12,7 +12,7 @@ Farm.create([
         state: "Texas"
     },
     {
-        name: "Tailwater Farms",
+        name: "Tailwater Farm",
         city: "Portland",
         state: "Oregon"
     },
